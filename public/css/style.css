@@ -27,11 +27,14 @@ justify-content: center;
     header ul{
         padding: 0px;
         
+        
     }
 
     header li{
         list-style-type: none;
         font-size: 1vw;
+       
+
     }
 
     header a{
@@ -39,6 +42,7 @@ justify-content: center;
         color: black;
         margin: 0PX;
         padding: 20px;
+        background-color: paleturquoise;
     }
     span{
         color: orange;

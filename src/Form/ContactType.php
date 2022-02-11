@@ -9,9 +9,11 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 
+//use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 
-
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 
 
 
@@ -58,27 +60,9 @@ class ContactType extends AbstractType
             
             
             
-            ->add('created_at', TextType::class,[
-
-                "label" => "Date d'ajout:",
-            "required" => true,
-                "attr" => [
-                    "placeholder" => "entrer une date",
-                    "Class" => "border border-primary"
-                ]
-
-            ])
+            ->add('created_at')
              
-            ->add('updated__at', TextType::class,[
-
-                "label" => "Date de modification:",
-            "required" => true,
-                "attr" => [
-                    "placeholder" => "entrer une date",
-                    "Class" => "border border-primary"
-                ]
-
-            ])  
+            ->add('updated_at')  
 
              ->add('ajouter', SubmitType::class)
 
