@@ -1,0 +1,45 @@
+nav{
+
+   text-decoration: none; 
+   color: brown;
+   list-style: none;
+}
+img{
+
+
+
+justify-content: center;
+   text-align: center; 
+}
+
+.displayed {
+    display: block;
+    margin-left: 0;
+    margin-right: auto; }
+ 
+    .container{
+        width:90%;
+        margin: 0 auto;
+    }
+    .flex{
+        display: flex;
+    }
+    header ul{
+        padding: 0px;
+        
+    }
+
+    header li{
+        list-style-type: none;
+        font-size: 1vw;
+    }
+
+    header a{
+        text-decoration: none;
+        color: black;
+        margin: 0PX;
+        padding: 20px;
+    }
+    span{
+        color: orange;
+    }
