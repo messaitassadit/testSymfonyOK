@@ -41,6 +41,8 @@
 	{% for contact in contacts %}
 		Bonjour
 		{{ contact.nom }}
-		{{ contact.prenom }}<br>
+		{{ contact.prenom }}
+		<a href="{{ path('edit_contact' , {'id' : contact.id} ) }}">modifier</a><br>
+			<a href="{{ path('supprimer_contact' , {'id' : contact.id} ) }}">supprimer</a><br>
 	{% endfor %}
 {% endblock %}
